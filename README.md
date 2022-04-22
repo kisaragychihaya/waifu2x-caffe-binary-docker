@@ -10,7 +10,7 @@ git clone https://github.com/kisaragychihaya/waifu2x-caffe-binary-docker
 cd waifu2x-caffe-binary-docker
 docker build -t <YOUR_TAG>   .
 ```
-or if you want build it,you can pull it from docker
+or if you want build it,you can pull it from dockerHUB
 ```
 docker pull kiana423/waifu2x-caffe
 ```
