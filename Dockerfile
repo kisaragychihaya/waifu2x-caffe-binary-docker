@@ -1,5 +1,6 @@
 
 FROM nvidia/cuda:11.4.0-cudnn8-runtime-ubuntu18.04
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt update && apt install -y  libboost-system1.65.1 libboost-filesystem1.65.1 \
 libboost-thread1.65.1 libopenblas-base libboost-iostreams1.65.1 libhdf5-100 libprotobuf10 libleveldb1v5 libsnappy1v5 libopencv-contrib3.2  \ 
 libgoogle-glog0v5 libgflags2.2&& apt clean 
